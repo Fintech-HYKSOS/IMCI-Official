@@ -1,4 +1,12 @@
-// import house images
+//import logo
+import Folourgo_Logo from './assets/folourgo/Folourgo_Logo.jpg'
+import Folourgo_Main from './assets/folourgo/Image site 6-01.jpg'
+import KERLAU_Logo from './assets/Kerlau/Kerlau_Logo.jpeg'
+import CinabreLogo from './assets/Cinabre/CinabreLogo.jpg'
+import Cinabre_1 from './assets/Cinabre/Cinabre_1.jpeg'
+
+// import house images small for HouseList
+import Icon from "./assets/img/icons/Icon.jpeg"
 import House1 from './assets/img/houses/house1.png';
 import House2 from './assets/img/houses/house2.png';
 import House3 from './assets/img/houses/house3.png';
@@ -11,6 +19,7 @@ import House9 from './assets/img/houses/house9.png';
 import House10 from './assets/img/houses/house10.png';
 import House11 from './assets/img/houses/house11.png';
 import House12 from './assets/img/houses/house12.png';
+
 // import house large images
 import House1Lg from './assets/img/houses/house1lg.png';
 import House2Lg from './assets/img/houses/house2lg.png';
@@ -24,6 +33,7 @@ import House9Lg from './assets/img/houses/house9lg.png';
 import House10Lg from './assets/img/houses/house10lg.png';
 import House11Lg from './assets/img/houses/house11lg.png';
 import House12Lg from './assets/img/houses/house12lg.png';
+import CardSucces from './assets/AgenceSucces/CardAgenceSucces.jpg';
 
 // import apartments images
 import Apartment1 from './assets/img/apartments/a1.png';
@@ -32,6 +42,8 @@ import Apartment3 from './assets/img/apartments/a3.png';
 import Apartment4 from './assets/img/apartments/a4.png';
 import Apartment5 from './assets/img/apartments/a5.png';
 import Apartment6 from './assets/img/apartments/a6.png';
+
+
 // import apartments large images
 import Apartment1Lg from './assets/img/apartments/a1lg.png';
 import Apartment2Lg from './assets/img/apartments/a2lg.png';
@@ -57,19 +69,21 @@ import Agent12 from './assets/img/agents/agent12.png';
 export const housesData = [
   {
     id: 1,
-    type: 'Maison',
+    type: 'Villa Basse',
     name: 'Maison 1',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House1,
+    image: CardSucces,
     imageLg: House1Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: 'Secteur Francais',
     bedrooms: '6',
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
+    logoSociety: Icon,
     price: '110000',
+    society: 'AGENCE SUCCÈS',
     agent: {
       image: Agent1,
       name: 'Patricia Tullert',
@@ -78,18 +92,24 @@ export const housesData = [
   },
   {
     id: 2,
-    type: 'Maison',
+    type: 'Villa Duplex',
     name: 'Maison 2',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House2,
+
+
+    image: Folourgo_Main,
     imageLg: House2Lg,
-    country: 'Abidjan',
-    address: 'Macory Zone 4, rue Langvin',
+    town: 'Abidjan',
+    address: 'Marcory Zone 4',
     bedrooms: '6',
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '140000',
     agent: {
       image: Agent2,
@@ -103,14 +123,20 @@ export const housesData = [
     name: 'Appartement 3',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House3,
+
+
+    image: Folourgo_Main,
     imageLg: House3Lg,
-    country: 'Abidjan',
-    address: '2 Glen Creek St. Alexandria, VA 22304',
+    town: 'Abidjan',
+    address: '2 Glen Creek St. Alexandria',
     bedrooms: '6',
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '170000',
     agent: {
       image: Agent3,
@@ -120,18 +146,24 @@ export const housesData = [
   },
   {
     id: 4,
-    type: 'Maison',
+    type: 'Villa Duplex',
     name: 'Maison 4',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House4,
+
+
+    image: Folourgo_Main,
     imageLg: House4Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '6',
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '200000',
     agent: {
       image: Agent4,
@@ -141,18 +173,20 @@ export const housesData = [
   },
   {
     id: 5,
-    type: 'Maison',
+    type: 'Villa',
     name: 'Maison 5',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House5,
+    image: CardSucces,
     imageLg: House5Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '5',
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2015',
+    logoSociety: Icon,
+    society: 'AGENCE SUCCÈS',
     price: '210000',
     agent: {
       image: Agent5,
@@ -162,18 +196,22 @@ export const housesData = [
   },
   {
     id: 6,
-    type: 'Maison',
+    type: 'Villa',
     name: 'Maison 6',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House6,
     imageLg: House6Lg,
-    country: 'Bassam',
-    address: '32 Pawnee Street Butte, MT 59701',
+    town: 'Bassam',
+    address: '32 Pawnee Street Butte',
     bedrooms: '6',
     bathrooms: '3',
     surface: '6200 sq ft',
     year: '2014',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '220000',
     agent: {
       image: Agent6,
@@ -183,18 +221,22 @@ export const housesData = [
   },
   {
     id: 7,
-    type: 'Apartament',
+    type: 'Magasin',
     name: 'Apartament 1',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment1,
     imageLg: Apartment1Lg,
-    country: 'Basssam',
+    town: 'Basssam',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '2',
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2012',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '20000',
     agent: {
       image: Agent7,
@@ -204,18 +246,22 @@ export const housesData = [
   },
   {
     id: 8,
-    type: 'Apartament',
+    type: 'Magasin',
     name: 'Apartament 2',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment2,
     imageLg: Apartment2Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '3',
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2011',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '30000',
     agent: {
       image: Agent8,
@@ -225,18 +271,22 @@ export const housesData = [
   },
   {
     id: 9,
-    type: 'Apartament',
+    type: 'Magasin',
     name: 'Apartament 3',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment3,
     imageLg: Apartment3Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '2',
     bathrooms: '1',
     surface: '1100 sq ft',
     year: '2011',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '40000',
     agent: {
       image: Agent9,
@@ -246,18 +296,22 @@ export const housesData = [
   },
   {
     id: 10,
-    type: 'Maison',
+    type: 'Villa',
     name: 'Maison 7',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House7,
     imageLg: House7Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '7240C Argyle St. Lawndale, CA 90260',
     bedrooms: '5',
     bathrooms: '3',
     surface: '3200 sq ft',
     year: '2015',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '117000',
     agent: {
       image: Agent10,
@@ -267,18 +321,22 @@ export const housesData = [
   },
   {
     id: 11,
-    type: 'Maison',
+    type: 'Villa Duplex',
     name: 'Maison 8',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House8,
     imageLg: House8Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '798 Talbot St. Bridgewater, NJ 08807',
     bedrooms: '7',
     bathrooms: '2',
     surface: '2200 sq ft',
     year: '2019',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '145000',
     agent: {
       image: Agent11,
@@ -288,18 +346,22 @@ export const housesData = [
   },
   {
     id: 12,
-    type: 'Maison',
+    type: 'Villa Duplex',
     name: 'Maison 9',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House9,
     imageLg: House9Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '2 Glen Creek St. Alexandria, VA 22304',
     bedrooms: '4',
     bathrooms: '4',
     surface: '4600 sq ft',
     year: '2015',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '139000',
     agent: {
       image: Agent12,
@@ -309,18 +371,22 @@ export const housesData = [
   },
   {
     id: 13,
-    type: 'Maison',
+    type: 'Villa Basse',
     name: 'Maison 10',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House10,
     imageLg: House10Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '5',
     bathrooms: '2',
     surface: '5200 sq ft',
     year: '2014',
+    
+    logoSociety: KERLAU_Logo,
+    society: 'SCI KERLAU',
+
     price: '180000',
     agent: {
       image: Agent1,
@@ -330,18 +396,24 @@ export const housesData = [
   },
   {
     id: 14,
-    type: 'Maison',
+    type: 'Villa Basse',
     name: 'Maison 11',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House11,
+
+
+    image: Folourgo_Main,
     imageLg: House11Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '5',
     bathrooms: '2',
     surface: '3200 sq ft',
     year: '2011',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '213000',
     agent: {
       image: Agent2,
@@ -351,18 +423,24 @@ export const housesData = [
   },
   {
     id: 15,
-    type: 'Maison',
+    type: 'Villa Basse',
     name: 'Maison 12',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House12,
+
+
+    image: Folourgo_Main,
     imageLg: House12Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '4',
     bathrooms: '3',
     surface: '5200 sq ft',
     year: '2013',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '221000',
     agent: {
       image: Agent3,
@@ -372,18 +450,24 @@ export const housesData = [
   },
   {
     id: 16,
-    type: 'Apartament',
+    type: 'Magasin',
     name: 'Apartament 16',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment4,
+
+
+    image: Folourgo_Main,
     imageLg: Apartment4Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '2',
     bathrooms: '1',
     surface: '1300 sq ft',
     year: '2011',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '21000',
     agent: {
       image: Agent4,
@@ -393,18 +477,24 @@ export const housesData = [
   },
   {
     id: 17,
-    type: 'Apartament',
+    type: 'Magasin',
     name: 'Apartament 17',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment5,
+
+
+    image: Folourgo_Main,
     imageLg: Apartment5Lg,
-    country: 'Abidjan',
+    town: 'Abidjan',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '3',
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2012',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '32000',
     agent: {
       image: Agent5,
@@ -414,22 +504,55 @@ export const housesData = [
   },
   {
     id: 18,
-    type: 'Apartament',
+    type: 'Terrain',
     name: 'Apartament 18',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment6,
+
+
+    image: Folourgo_Main,
     imageLg: Apartment6Lg,
-    country: 'Bassam',
+    town: 'Bassam',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '3',
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2010',
+
+    logoSociety: Folourgo_Logo,
+    society: 'FOLOURGO CONSTRUCTION',
+
     price: '38000',
     agent: {
       image: Agent6,
       name: 'Karen Sorensen',
+      phone: '0123 456 78910',
+    },
+  },
+  {
+    id: 19,
+    type: 'Appartement',
+    name: 'Maison 2',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+
+
+    image: Cinabre_1,
+    imageLg: House2Lg,
+    town: 'Abidjan',
+    address: 'Marcory Zone 4',
+    bedrooms: '6',
+    bathrooms: '3',
+    surface: '4200 sq ft',
+    year: '2016',
+
+    logoSociety: CinabreLogo,
+    society: 'CINABRE IMMOBILIER',
+
+    price: '140000',
+    agent: {
+      image: Agent2,
+      name: 'Daryl Hawker',
       phone: '0123 456 78910',
     },
   },

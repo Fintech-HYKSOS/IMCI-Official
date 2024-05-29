@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@91.3,300..800&family=Quicksand:wght@300..700&display=swap');
 @layer base {
   body {
     @apply font-primary bg-gray-200;
+    font-family: 'Open Sans';
+    overflow-x: hidden;
   }
   .dropdown {
     @apply w-full lg:max-w-[296px] cursor-pointer;
