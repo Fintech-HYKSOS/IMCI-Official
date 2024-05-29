@@ -1,0 +1,7 @@
+.imgBlob{
+    position: absolute;
+    z-index: -99;
+    height: 98%;
+    width: 42%;
+    overflow: hidden;
+}

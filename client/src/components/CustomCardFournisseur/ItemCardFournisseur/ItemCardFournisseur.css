@@ -1,0 +1,17 @@
+.containImg-ItemFournisseur{
+    height: 12rem;
+    /* width: 15rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.containImg-ItemFournisseur div{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.containImg-ItemFournisseur img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}

@@ -1,0 +1,23 @@
+/* .flexing-right{
+    display: flex;
+} */
+
+@media (min-width: 726px) {
+    .flexing-right{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.text-right-custom{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5rem;
+    /* margin-bottom: 3rem; */
+    /* border: 1px solid salmon; */
+}
+
+.text-right-custom div{
+    width: 100%;
+}

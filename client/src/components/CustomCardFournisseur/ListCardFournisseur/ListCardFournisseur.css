@@ -1,0 +1,9 @@
+.fournisseurList-custom{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+.filterInListFournisseur{
+    height: 100%;
+}

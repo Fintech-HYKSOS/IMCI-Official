@@ -1,0 +1,35 @@
+.text-services h1{
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.display-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 1px solid red */
+}
+
+/*Icons*/
+.display-icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+.display-icons div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.display-icons-contain-img{
+    overflow: hidden;
+}
+/*Close Icons*/
+

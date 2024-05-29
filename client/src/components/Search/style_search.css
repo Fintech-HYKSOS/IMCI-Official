@@ -1,0 +1,5 @@
+.search-custom-forBlockOnMediaScreen{
+    @media (max-width: 807px){
+        display: block !important;
+    }
+}

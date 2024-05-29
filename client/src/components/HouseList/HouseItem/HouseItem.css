@@ -1,0 +1,38 @@
+.indication{
+    /* height: 100%; */
+    height: 2rem;
+}
+
+.indication-custom{
+    height: 2rem
+}
+
+.indication-custom img{
+    height: 100%;
+    /* width: 100%; */
+}
+
+.text-indication{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.imgContain-custom{
+    height: 312px;
+    /* width: 312px; */
+
+}
+
+.imgContain-custom-realContain{
+    height: 100%;
+    width: 100%;
+
+}
+
+.imgContain-custom img{
+    height: 90%;
+    /* width: 90%; */
+    border-radius: 27% 0% 27% 0%;
+    object-fit: cover;
+}

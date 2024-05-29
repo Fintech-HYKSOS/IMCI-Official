@@ -1,0 +1,23 @@
+.button-sidebar-custom{
+    margin-top: 3rem;
+    background-color: rgb(23, 23, 80);
+    color: aliceblue;
+    border-radius: 0.5rem;
+}
+
+.div-sticky-custom{
+    position: sticky;
+    top : 0
+}
+
+.div-sticky-custom{
+    @media (min-width: 1234px){
+        display: none;
+    }
+}
+
+.responsive-margin-top-custom{
+    @media (min-width: 1234px){
+        margin-top: 2rem;
+    }
+}

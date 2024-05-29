@@ -1,0 +1,33 @@
+.services-container{
+    background-color: #f9f9f9;
+    /* background-color: #00aa9b; */
+}
+
+.card-custom{
+    /* width: 16rem; */
+    /* border: 1px solid rgb(13, 13, 98); */
+    padding: 1.5%;
+    /* background-color: #acfff5;    
+    box-shadow: 10px 10px 3px rgb(60, 60, 60); */
+
+    border-radius: 2rem;
+}
+
+.card-custom-containImg{
+    /* border: 1px solid black; */
+    height: 6rem;
+}
+
+.card-custom-containImg-img{
+    /* border: 1px solid rgb(138, 47, 47); */
+    height: 100%;
+}
+
+.card-custom-containImg-img img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.services-indication{
+
+}

@@ -1,0 +1,6 @@
+.dropdown-custom{
+    width: 12rem;
+    @media (max-width: 807px){
+        width: 100%;
+    }
+}

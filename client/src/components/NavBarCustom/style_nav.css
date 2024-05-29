@@ -1,0 +1,37 @@
+.header-custom{
+    height: 6.5rem;
+    align-items: center;
+    z-index: 99;
+}
+
+.header-custom-content{
+    height: 100%;
+    align-items: center;
+}
+
+/* .header-custom-content-right{
+    @media (max-width : 1077px){
+        display: none !important;
+    } toggle mobile menu layout
+} */
+
+.navigation-custom{
+    @media (max-width: 1250px){
+        display: none !important;
+    }
+}
+
+.disclosure-custom{
+    background-color: black;
+    z-index: 99;
+    position: relative;
+}
+
+.relative-custom{
+    width: 100%;
+    left: 100%;
+}
+
+.subMenu-Navbar-custom{
+    width: 100%;
+}
