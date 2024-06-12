@@ -1,0 +1,38 @@
+.banner-carousel .carousel-custom{
+    /* width: 100%; */
+    /* height: 100%; */
+    z-index: 31;
+    width : 35rem;
+
+}
+
+.banner-carousel div.carousel-slider div.slider-wrapper{
+    width: 100%;
+    height: 21rem;
+}
+
+.banner-carousel .carousel-contain-img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-carousel .thumbs-wrapper{
+    display: none;
+}
+
+.banner-carousel .carousel-custom .carousel-contain-img img{
+    height: 21rem;
+    width : 35rem;
+    object-fit: cover;
+}
+
+.banner-carousel .thumbs li.thumb{
+    height: 80px !important;
+    width: 80px !important;
+}
+
+.banner-carousel .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

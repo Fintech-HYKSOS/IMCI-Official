@@ -11,11 +11,15 @@ module.exports = {
       },
     },
     screens: {
+      max_BeforeSm: {max : '639px'},
       sm: '640px',
       screen_services: '726px',
+      max_BeforeMd: {max : '767px'},
       md: '768px',
+      max_BeforeLg: {max : '1023px'},
       lg: '1024px',
       screen_navbar:'1250px',
+      max_BeforeXl: {max : '1233px'},
       xl: '1234px',
     },
     extend: {

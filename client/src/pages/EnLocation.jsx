@@ -1,9 +1,6 @@
-import FilterBySelecting from "../components/FilterBySelecting/FilterBySelecting"
-import Banner from '../components/Banner/Banner'
-import BannerTypeOffre from "../components/BannerTypeOffre/BannerTypeOffre"
+import { BannerTypeOffre } from "../components/Banners/Banners"
+import { FilterBySelecting } from "../components/Filters/FilterBySelecting/FilterBySelecting"
 import HouseList from "../components/HouseList/HouseList"
-
-// BannerEnLocation
 
 const EnLocation = () => {
     return(

@@ -1,0 +1,18 @@
+/* .pub-img-custom{
+    animation: scroll_img 10s linear infinite;
+}
+
+@keyframes scroll_img{
+    0%{
+        left : -100%
+    }
+
+    100%{
+        left : 100%
+    }
+} */
+
+.text-upright{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}

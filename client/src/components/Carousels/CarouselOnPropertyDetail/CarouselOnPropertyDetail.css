@@ -1,0 +1,75 @@
+.propertyDetail-custom{
+    width : 100%;
+}
+
+
+.propertyDetail-custom .carousel-custom{
+    /* width: 100%; */
+    /* height: 100%; */
+    z-index: 99;
+    width : 100%;
+}
+
+/* .propertyDetail-custom div.carousel-slider div.slider-wrapper{
+    width: 100%;
+    height: 100%;
+} */
+
+@media (max-width: 640px) {
+    .propertyDetail-custom .carousel-contain-img{
+        /* width: 100%; */
+        height: 20rem;
+    }
+    
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .propertyDetail-custom .carousel-contain-img{
+        /* width: 100%; */
+        height: 25rem;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .propertyDetail-custom .carousel-contain-img{
+        /* width: 100%; */
+        height: 30rem;
+    }
+    
+}
+
+.propertyDetail-custom .carousel-custom .carousel-contain-img img{
+    height: 100%;
+    width : 100%;
+    object-fit: fill;
+}
+
+.propertyDetail-custom .thumbs{
+    display: flex;
+    justify-content: center;
+}
+
+.propertyDetail-custom .thumbs li.thumb{
+    height: 80px !important;
+    width: 80px !important;
+}
+
+.propertyDetail-custom .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.propertyDetail-custom-explication{
+    width: 100%;
+}
+
+.propertyDetail-custom-explication--buttons{
+    background-color: rgb(21, 137, 46);
+}
+
+.propertyDetail-custom-explication--buttons div{
+    text-align: center;
+
+}

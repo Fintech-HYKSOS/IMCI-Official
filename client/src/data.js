@@ -4,6 +4,16 @@ import Folourgo_Main from './assets/folourgo/Image site 6-01.jpg'
 import KERLAU_Logo from './assets/Kerlau/Kerlau_Logo.jpeg'
 import CinabreLogo from './assets/Cinabre/CinabreLogo.jpg'
 import Cinabre_1 from './assets/Cinabre/Cinabre_1.jpeg'
+import Folourgo_4 from './assets/folourgo/Folourgo_4.jpeg'
+import AgenceSucces_Logo from './assets/AgenceSucces/AgenceSucces_Logo.png'
+
+import Kerlau_1 from './assets/Kerlau/Kerlau_1.jpeg'
+import Kerlau_2 from './assets/Kerlau/Kerlau_2.jpg'
+import Kerlau_3 from './assets/Kerlau/Kerlau_3.jpeg'
+import Kerlau_4 from './assets/Kerlau/Kerlau_4.jpeg'
+import Kerlau_5 from './assets/Kerlau/Kerlau_5.jpeg'
+import Kerlau_6 from './assets/Kerlau/Kerlau_6.jpeg'
+import Kerlau_7 from './assets/Kerlau/Kerlau_7.jpeg'
 
 // import house images small for HouseList
 import Icon from "./assets/img/icons/Icon.jpeg"
@@ -81,9 +91,14 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    logoSociety: Icon,
+    logoSociety: AgenceSucces_Logo,
     price: '110000',
+    
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'AGENCE SUCCÈS',
+    href : '/SocietyProperties/Agence_Succes',
+
     agent: {
       image: Agent1,
       name: 'Patricia Tullert',
@@ -108,7 +123,10 @@ export const housesData = [
     year: '2016',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
     price: '140000',
     agent: {
@@ -135,7 +153,10 @@ export const housesData = [
     year: '2016',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
     price: '170000',
     agent: {
@@ -147,27 +168,30 @@ export const housesData = [
   {
     id: 4,
     type: 'Villa Duplex',
-    name: 'Maison 4',
+    name: 'Apartament 18',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
 
 
-    image: Folourgo_Main,
-    imageLg: House4Lg,
+    image: Folourgo_4,
+    imageLg: Folourgo_4,
     town: 'Bassam',
     address: '84 Woodland St. Cocoa, FL 32927',
-    bedrooms: '6',
-    bathrooms: '3',
-    surface: '4200 sq ft',
-    year: '2016',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
-    price: '200000',
+    price: '38000',
     agent: {
-      image: Agent4,
-      name: 'Kaitlyn Gonzalez',
+      image: Agent6,
+      name: 'Karen Sorensen',
       phone: '0123 456 78910',
     },
   },
@@ -185,8 +209,13 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2015',
-    logoSociety: Icon,
+    logoSociety: AgenceSucces_Logo,
+    
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'AGENCE SUCCÈS',
+    href : '/SocietyProperties/Agence_Succes',
+
     price: '210000',
     agent: {
       image: Agent5,
@@ -200,7 +229,7 @@ export const housesData = [
     name: 'Maison 6',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House6,
+    image: Kerlau_1,
     imageLg: House6Lg,
     town: 'Bassam',
     address: '32 Pawnee Street Butte',
@@ -210,7 +239,10 @@ export const housesData = [
     year: '2014',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '220000',
     agent: {
@@ -225,7 +257,7 @@ export const housesData = [
     name: 'Apartament 1',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment1,
+    image: Kerlau_7,
     imageLg: Apartment1Lg,
     town: 'Basssam',
     address: '32 Pawnee Street Butte, MT 59701',
@@ -235,7 +267,10 @@ export const housesData = [
     year: '2012',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '20000',
     agent: {
@@ -250,7 +285,7 @@ export const housesData = [
     name: 'Apartament 2',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment2,
+    image: Kerlau_5,
     imageLg: Apartment2Lg,
     town: 'Abidjan',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -260,7 +295,10 @@ export const housesData = [
     year: '2011',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '30000',
     agent: {
@@ -275,7 +313,7 @@ export const housesData = [
     name: 'Apartament 3',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: Apartment3,
+    image: Kerlau_3,
     imageLg: Apartment3Lg,
     town: 'Abidjan',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -285,7 +323,10 @@ export const housesData = [
     year: '2011',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '40000',
     agent: {
@@ -300,7 +341,7 @@ export const housesData = [
     name: 'Maison 7',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House7,
+    image: Kerlau_2,
     imageLg: House7Lg,
     town: 'Bassam',
     address: '7240C Argyle St. Lawndale, CA 90260',
@@ -310,7 +351,10 @@ export const housesData = [
     year: '2015',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '117000',
     agent: {
@@ -325,7 +369,7 @@ export const housesData = [
     name: 'Maison 8',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House8,
+    image: Kerlau_6,
     imageLg: House8Lg,
     town: 'Bassam',
     address: '798 Talbot St. Bridgewater, NJ 08807',
@@ -335,7 +379,10 @@ export const housesData = [
     year: '2019',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '145000',
     agent: {
@@ -350,7 +397,7 @@ export const housesData = [
     name: 'Maison 9',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House9,
+    image: Kerlau_4,
     imageLg: House9Lg,
     town: 'Abidjan',
     address: '2 Glen Creek St. Alexandria, VA 22304',
@@ -360,7 +407,10 @@ export const housesData = [
     year: '2015',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '139000',
     agent: {
@@ -375,7 +425,7 @@ export const housesData = [
     name: 'Maison 10',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
-    image: House10,
+    image: Kerlau_2,
     imageLg: House10Lg,
     town: 'Bassam',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -385,7 +435,10 @@ export const housesData = [
     year: '2014',
     
     logoSociety: KERLAU_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'SCI KERLAU',
+    href : '/SocietyProperties/SCI_Kerlau',
 
     price: '180000',
     agent: {
@@ -396,28 +449,31 @@ export const housesData = [
   },
   {
     id: 14,
-    type: 'Villa Basse',
-    name: 'Maison 11',
+    type: 'Villa Duplex',
+    name: 'Apartament 18',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
 
 
-    image: Folourgo_Main,
-    imageLg: House11Lg,
-    town: 'Abidjan',
-    address: '28 Westport Dr. Warminster, PA 18974',
-    bedrooms: '5',
-    bathrooms: '2',
-    surface: '3200 sq ft',
-    year: '2011',
+    image: Folourgo_4,
+    imageLg: Folourgo_4,
+    town: 'Bassam',
+    address: '84 Woodland St. Cocoa, FL 32927',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
-    price: '213000',
+    price: '38000',
     agent: {
-      image: Agent2,
-      name: 'Daryl Hawker',
+      image: Agent6,
+      name: 'Karen Sorensen',
       phone: '0123 456 78910',
     },
   },
@@ -439,7 +495,10 @@ export const housesData = [
     year: '2013',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
     price: '221000',
     agent: {
@@ -466,7 +525,10 @@ export const housesData = [
     year: '2011',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
     price: '21000',
     agent: {
@@ -477,28 +539,31 @@ export const housesData = [
   },
   {
     id: 17,
-    type: 'Magasin',
-    name: 'Apartament 17',
+    type: 'Villa Duplex',
+    name: 'Apartament 18',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
 
 
-    image: Folourgo_Main,
-    imageLg: Apartment5Lg,
-    town: 'Abidjan',
-    address: '28 Westport Dr. Warminster, PA 18974',
+    image: Folourgo_4,
+    imageLg: Folourgo_4,
+    town: 'Bassam',
+    address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '3',
     bathrooms: '1',
-    surface: '1000 sq ft',
-    year: '2012',
+    surface: '1200 sq ft',
+    year: '2010',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
-    price: '32000',
+    price: '38000',
     agent: {
-      image: Agent5,
-      name: 'Grover Robinson',
+      image: Agent6,
+      name: 'Karen Sorensen',
       phone: '0123 456 78910',
     },
   },
@@ -520,7 +585,10 @@ export const housesData = [
     year: '2010',
 
     logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
@@ -547,7 +615,10 @@ export const housesData = [
     year: '2016',
 
     logoSociety: CinabreLogo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     society: 'CINABRE IMMOBILIER',
+    href : '/SocietyProperties/Cinabre',
 
     price: '140000',
     agent: {
@@ -556,4 +627,40 @@ export const housesData = [
       phone: '0123 456 78910',
     },
   },
+  {
+    id: 20,
+    type: 'Villa Duplex',
+    name: 'Apartament 18',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+
+
+    image: Folourgo_4,
+    imageLg: Folourgo_4,
+    town: 'Bassam',
+    address: '84 Woodland St. Cocoa, FL 32927',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
+
+    logoSociety: Folourgo_Logo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    society: 'FOLOURGO CONSTRUCTION',
+    href : '/SocietyProperties/Folourgo',
+
+    price: '38000',
+    agent: {
+      image: Agent6,
+      name: 'Karen Sorensen',
+      phone: '0123 456 78910',
+    },
+  },
 ];
+
+//Bouton Souscrire a l'offre
+//Voir details de l'offre
+//Avancer sur le filtre de recherche
+//Avancer sur les donnees de folourgo 
+//API Ajout fournisseur

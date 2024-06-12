@@ -1,0 +1,31 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollingText-custom::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollingText-custom {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.scrollingText-custom-containText{
+    animation: scroll_horizontal 60s linear infinite;
+}
+
+/* .scrollingText-custom-containText:hover{
+    animation: scroll_horizontal 20s linear infinite;
+} */
+
+@keyframes scroll_horizontal{
+    0%{
+        left: 110%;
+    }
+
+    100%{
+        left: -200%;
+    }
+}

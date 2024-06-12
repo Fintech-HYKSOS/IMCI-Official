@@ -1,0 +1,9 @@
+.sidebar-custom{
+    @media (max-width: 1234px){
+        display: none;
+    }
+}
+
+.submenu-custom .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}

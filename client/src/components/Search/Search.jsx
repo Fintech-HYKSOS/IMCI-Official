@@ -10,7 +10,7 @@ import SocietyDropdown from '../Dropdowns/SocietyDropdown/SocietyDropdown';
 
 //import icons
 import { RiSearch2Line } from 'react-icons/ri'
-import { HouseContext } from "../../Context/HouseContext";
+import { HouseContext } from "../../context/HouseContext";
 
 import './style_search.css'
 

@@ -1,0 +1,30 @@
+.imgContain-custom--forAllSociety{
+    height: 230px;
+    /* width: 312px; */
+
+}
+
+.imgContain-custom-realContain--forAllSociety{
+    height: 100%;
+    width: 100%;
+
+}
+
+.imgContain-custom--forAllSociety img{
+    height: 90%;
+    /* width: 90%; */
+    border-radius: 27% 0% 27% 0%;
+    object-fit: cover;
+}
+
+.flex-options-itemCard-custom{
+    @media (max-width: 1024px){
+        display: block;
+    }
+}
+
+.flex-options-itemCard-custom button{
+    @media (max-width: 1024px){
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+/* .CarouselOtherWells{
+    justify-content: center;
+} */
+
+.contain-img-CarouselOtherWells{
+    height: 15rem;
+    width: 15rem;
+}
+
+.contain-img-CarouselOtherWells img{
+    height: 100%;
+    width: 100%;
+}

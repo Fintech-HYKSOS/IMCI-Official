@@ -19,6 +19,6 @@ const AxiosKheopxContextProvider = ({ children }) => {
     //En cliquant sur une offre, le useState ci-dessous sera rempli par le GET api qu'on fera avec le lien en question
     const [detailOffre, setDetailOffre] = useState({})
 
-    //L'image d'un bien immobilier. Toujours connecté cela aux autres useStat"e
+    //L'image d'un bien immobilier. Toujours connecté cela aux autres useState
 
 }

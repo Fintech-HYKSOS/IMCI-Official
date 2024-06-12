@@ -38,6 +38,8 @@ const ConditionalHouseList = () => {
     const housesOnlyKERLAU = houses.filter(house => house.society === "SCI KERLAU")
     const findOnehouseOnlyKERLAU = houses.find(house => house.society === "SCI KERLAU")
 
+    const housesOnlyCinabre = houses.filter(house => house.society === "CINABRE IMMOBILIER")
+
     const SortForDisplay = [findOnehouseOnlyFOLOURGO].concat(findOnehouseOnlyKERLAU).concat(findOnehouseOnlyAG)
     console.log(SortForDisplay)
     const housesOnlyAll = housesSort.filter(house => house.society === "FOLOURGO CONSTRUCTION" || house.society === "SCI KERLAU" || house.society === "AGENCE SUCCÈS")
@@ -59,10 +61,10 @@ const ConditionalHouseList = () => {
             <div className='container mx-auto'>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-14 mb-3'>
                     {
-                        location.pathname == '/societyProperties/Folourgo' &&
+                        location.pathname == '/SocietyProperties/Folourgo' &&
                         housesOnlyFOLOURGO.map((house, index) => {
                             return (
-                                <Link to={`/property/${house.id}`}
+                                <Link to={`${house.href}`}
                                     key={index}>
                                     <House house={house} />
                                 </Link>
@@ -72,10 +74,10 @@ const ConditionalHouseList = () => {
                     }
 
                     {
-                        location.pathname == '/societyProperties/Agence_Succes' &&
+                        location.pathname == '/SocietyProperties/Agence_Succes' &&
                         housesOnlyAG.map((house, index) => {
                             return (
-                                <Link to={`/property/${house.id}`}
+                                <Link to={`${house.href}`}
                                     key={index}>
                                     <House house={house} />
                                 </Link>
@@ -85,10 +87,10 @@ const ConditionalHouseList = () => {
                     }
 
                     {
-                        location.pathname == '/societyProperties/SCI_Kerlau' &&
+                        location.pathname == '/SocietyProperties/SCI_Kerlau' &&
                         housesOnlyKERLAU.map((house, index) => {
                             return (
-                                <Link to={`/property/${house.id}`}
+                                <Link to={`${house.href}`}
                                     key={index}>
                                     <House house={house} />
                                 </Link>
@@ -96,6 +98,20 @@ const ConditionalHouseList = () => {
                             )
                         })
                     }
+
+                    {
+                        location.pathname == '/SocietyProperties/Cinabre' &&
+                        housesOnlyCinabre.map((house, index) => {
+                            return (
+                                <Link to={`${house.href}`}
+                                    key={index}>
+                                    <House house={house} />
+                                </Link>
+
+                            )
+                        })
+                    }
+
                 </div>
             </div>
 

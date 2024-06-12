@@ -24,7 +24,7 @@ const RightService = ({ titre, content }) => {
     return (
         <div className='flexing-right'>
             <motion.div initial={{ opacity: 0 }} animate={animationControl} className='text-right-custom' ref={ref}>
-                <div className='display-services'>
+                <div className='display-services p-5'>
                     <h1 className="">{titre}</h1>
 
                     <p>{content}</p>

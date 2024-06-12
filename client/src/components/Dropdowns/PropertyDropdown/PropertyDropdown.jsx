@@ -6,7 +6,7 @@ import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri'
 // import headless ui
 import { Menu } from '@headlessui/react';
 //import house context
-import { HouseContext } from '../../../Context/HouseContext';
+import { HouseContext } from '../../../context/HouseContext';
 import '../style_dropdown.css'
 
 const PropertyDropdown = () => {

@@ -1,4 +1,4 @@
-import Banner from "../components/Banner/Banner"
+import { Banner } from "../components/Banners/Banners";
 import ListCardFournisseur from "../components/CustomCardFournisseur/ListCardFournisseur/ListCardFournisseur";
 import SearchBarCustom from "../components/SearchBarCustom/SearchBarCustom";
 

@@ -25,6 +25,8 @@ const navigation = [
             { name: "Lister Main d'oeuvre", href: '/MainOeuvre', current: false },
         ]
     },
+    { name: 'Checking', href: '/Checkings', current: false, subMenuExist: false, },
+
 ]
 
 const AuthentificationButtons = [
@@ -40,11 +42,13 @@ export default function NavBarCustom() {
     const navigate = useNavigate()
     const [hiddenOnOrOff, setHiddenOnOrOff] = useState('hidden')
 
+    //Exists only for toggling display of absolute subMenu of "Main Oeuvre"
     const switchHidden = (e) => {
         e.preventDefault();
-        if(hiddenOnOrOff==='hidden'){
+        console.log("swtch avtivated")
+        if (hiddenOnOrOff === 'hidden') {
             setHiddenOnOrOff('block')
-        } else{
+        } else {
             setHiddenOnOrOff('hidden')
         }
     }
@@ -58,11 +62,11 @@ export default function NavBarCustom() {
 
                             <div className="absolute inset-y-0 left-0 flex items-center screen_navbar:hidden">
                                 {/* Mobile menu button*/}
-                                <Disclosure.Button onClick={(e) => {switchHidden(e)}} className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <XMarkIcon className="block h-6 w-6" aria-hidden="true"/>
+                                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                                     ) : (
                                         <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                                     )}
@@ -74,9 +78,9 @@ export default function NavBarCustom() {
                                 <Link to={"/"}>
                                     <div className="flex flex-shrink-0 items-center h-32">
                                         <img
-                                            className="w-full h-full object-cover"
+                                            className="h-32 object-contain"
                                             src={Logo}
-                                            alt="Your Company"
+                                            alt="imci.cloud Logo"
                                         />
                                     </div>
                                 </Link>
@@ -85,13 +89,13 @@ export default function NavBarCustom() {
                                     <div className="relative flex space-x-4">
                                         {navigation.map((item) => (
                                             item.subMenuExist !== true ?
-                                                <Link className={classNames(
+                                                <button onClick={(e) => { setHiddenOnOrOff("block" ? "hidden" : "block"); navigate(`${item.href}`) }} className={classNames(
                                                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                     'rounded-md px-3 py-2 text-screen_navbar font-medium'
                                                 )}
-                                                    to={item.href}>
+                                                >
                                                     {item.name}
-                                                </Link>
+                                                </button>
 
                                                 :
 
@@ -103,10 +107,9 @@ export default function NavBarCustom() {
                                                     <div className={`${hiddenOnOrOff} bg-white absolute px-3 py-3 rounded`}>
                                                         {(item.subMenu).map((subItem, key) => (
                                                             <div className='subMenu-Navbar-custom my-2'>
-                                                                <Link className={classNames('text-black')}
-                                                                    to={subItem.href}>
+                                                                <button onClick={(e) => { setHiddenOnOrOff("block" ? "hidden" : "block"); navigate(`${subItem.href}`) }} className={classNames('text-black')}>
                                                                     {subItem.name}
-                                                                </Link>
+                                                                </button>
                                                             </div>
                                                         ))}
                                                     </div>
@@ -119,17 +122,18 @@ export default function NavBarCustom() {
 
                             {/* Section Droite */}
                             <div className="relative z-30 inset-y-0 flex items-center pr-2 screen_navbar:static screen_navbar:inset-auto screen_navbar:ml-6 screen_navbar:pr-0 header-custom-content header-custom-content-right">
-                                <div className="flex space-x-4 navigation-custom">
+                                {/* <div className="flex space-x-4 navigation-custom">
                                     {AuthentificationButtons.map((item) => (
-                                        <Link className={classNames(
+                                        <Link onClick={(e) => { setHiddenOnOrOff("block" ? "hidden" : "block"); }} className={classNames(
                                             item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                             'rounded-md px-3 py-2 text-screen_navbar font-medium'
                                         )}
-                                            to={item.href}>
+                                            to={item.href}
+                                        >
                                             {item.name}
                                         </Link>
                                     ))}
-                                </div>
+                                </div> */}
 
                                 {/* Icon Cloche/Bell */}
                                 {/* <button
@@ -236,7 +240,7 @@ export default function NavBarCustom() {
                                     </div>
                             ))}
 
-                            <div className="flex space-x-4">
+                            {/* <div className="flex space-x-4">
                                 {AuthentificationButtons.map((item) => (
                                     <Link className={classNames(
                                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -246,7 +250,7 @@ export default function NavBarCustom() {
                                         {item.name}
                                     </Link>
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                     </Disclosure.Panel>
                 </>

@@ -35,6 +35,9 @@ const HouseContextProvider = ({ children }) => {
         maxPrice: maxPrice,
     })
 
+    //For display Other Houses in Property Details
+    const [otherHousesInPropertyDetail, setOtherHousesInPropertyDetail] = useState([])
+
 
     //return tous les pays
     useEffect(() => {
@@ -184,6 +187,9 @@ const HouseContextProvider = ({ children }) => {
             setSociety,
             societies,
             setSocieties,
+
+            otherHousesInPropertyDetail,
+            setOtherHousesInPropertyDetail,
 
             houses,
             loading,

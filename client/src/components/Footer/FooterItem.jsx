@@ -1,13 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import Logo_Imci from '../../assets/img/Logo-IMCI-Update-WithoutBG.png'
 
 export default function Footer() {
-    // const suscriptions = [
-    //     {name: 'Acquisition', path: '/'},
-    //     {name: 'Acquisition', path: '/'},
-    // ]
 
+    const navigate = useNavigate();
 
     return (
         <footer
@@ -97,11 +93,17 @@ export default function Footer() {
                     <div className="">
                         <h6
                             className="mb-4 text-[#00aa9b] flex items-center justify-center font-semibold uppercase md:justify-start">
-                            Immobilier Côte d'Ivoire
+                            Immobilier Côte d'Ivoire -- IMCI.CLOUD
                         </h6>
-                        <p className='text-neutral-200'>
+                        {/* <p className='text-neutral-200'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        </p> */}
+
+                        <div className='h-36'>
+                            <div className='h-full cursor-pointer' onClick={() => navigate('/')}>
+                                <img className="w-full h-full object-contain" src={Logo_Imci} alt="" srcset="" />
+                            </div>
+                        </div>
                     </div>
                     {/* <!-- Services section --> */}
                     <div className="">
@@ -111,30 +113,18 @@ export default function Footer() {
                         </h6>
                         <p className="mb-4">
                             <a className="hover:text-[#00aa9b] text-neutral-200">
-                                <Link>
-                                    Acquisition
+                                <Link to={'/services'}>
+                                    Souscription Basique
                                 </Link>
                             </a>
                         </p>
                         <p className="mb-4">
                             <a className="hover:text-[#00aa9b] text-neutral-200">
-                                <Link>
-                                    Saas
+                                <Link to={'/services'}>
+                                    Souscription VIP
                                 </Link>
                             </a>
                         </p>
-                        <p className="mb-4">
-                            <a className="hover:text-[#00aa9b] text-neutral-200">
-                                <Link>
-                                    Gestion Commerciale
-                                </Link>
-                            </a>
-                        </p>
-                        {/* <p>
-                            <a className="text-neutral-200">
-                                Laravel
-                            </a>
-                        </p> */}
                     </div>
 
                     {/* <!-- Useful links section --> */}
@@ -152,14 +142,14 @@ export default function Footer() {
                         </p>
                         <p className="mb-4">
                             <a className="hover:text-[#00aa9b] text-neutral-200">
-                                <Link to={"/"}>
+                                <Link to={"/EnVente"}>
                                     En Vente
                                 </Link>
                             </a>
                         </p>
                         <p className="mb-4">
                             <a className="hover:text-[#00aa9b] text-neutral-200">
-                                <Link to={"/"}>
+                                <Link to={"/EnLocation"}>
                                     En location
                                 </Link>
                             </a>
@@ -216,7 +206,7 @@ export default function Footer() {
                                     d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
                                     clipRule="evenodd" />
                             </svg>
-                            +225 0700606079
+                            +225 0504921096
                         </p>
 
                         {/* Telephone Fixe */}
@@ -243,7 +233,7 @@ export default function Footer() {
                 <a
                     className="font-semibold text-neutral-400"
                     href="https://tw-elements.com/"
-                >COMPAGNIE DE SERVICE NUMÉRIQUES DE CÔTE D'IVOIRE (CSN-CI)</a>
+                >COMPAGNIE DE SERVICES NUMÉRIQUES EN CÔTE D'IVOIRE (CSN-CI)</a>
             </div>
         </footer>
     );

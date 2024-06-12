@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 //import context
-import { HouseContext } from '../../Context/HouseContext';
+import { HouseContext } from '../../context/HouseContext';
 
 //import components
 import House from './HouseItem/House';
@@ -39,7 +39,7 @@ const HouseList = () => {
   const findOnehouseOnlyKERLAU = houses.find(house => house.society === "SCI KERLAU")
 
   // const housesOnlyKERLAU = houses.filter(house => house.society === "CINABRE IMMOBILIER")
-  const findOnehouseOnlyCinabre= houses.find(house => house.society === "CINABRE IMMOBILIER")
+  const findOnehouseOnlyCinabre = houses.find(house => house.society === "CINABRE IMMOBILIER")
 
   const SortForDisplay = [findOnehouseOnlyFOLOURGO].concat(findOnehouseOnlyKERLAU).concat(findOnehouseOnlyAG).concat(findOnehouseOnlyCinabre)
   console.log(SortForDisplay)
@@ -53,17 +53,16 @@ const HouseList = () => {
   }
   if (houses.length < 1) {
     return (
-      <div className='text-center text-3xl
-    text-gray-400 mt-48'>Désolé, rien trouvé !</div>
+      <div className='text-center text-3xl text-gray-400 mt-48'>Désolé, rien trouvé !</div>
     );
   }
   return (
     <section className='mb-7'>
       <div className='container mx-auto'>
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-14 mb-3 gap-4'>
+        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
-              <Link to={`/property/${house.id}`}
+              <Link to={`${house.href}`}
                 key={index}>
                 <House house={house} />
               </Link>
@@ -72,10 +71,10 @@ const HouseList = () => {
           })}
         </div>
 
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-14 mb-3 gap-4'>
+        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
-              <Link to={`/property/${house.id}`}
+              <Link to={`${house.href}`}
                 key={index}>
                 <House house={house} />
               </Link>
@@ -84,10 +83,10 @@ const HouseList = () => {
           })}
         </div>
 
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-14 mb-3 gap-4'>
+        {/* <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
-              <Link to={`/property/${house.id}`}
+              <Link to={`${house.href}`}
                 key={index}>
                 <House house={house} />
               </Link>
@@ -96,26 +95,26 @@ const HouseList = () => {
           })}
         </div>
 
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-14 mb-3 gap-4'>
+        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
-              <Link to={`/property/${house.id}`}
+              <Link to={`${house.href}`}
                 key={index}>
                 <House house={house} />
               </Link>
 
             )
           })}
-        </div>
+        </div> */}
       </div>
 
       {/* Conditional rendering if actual page is Home page. Otherwise, dont display */}
-      {
+      {/* {
         location.pathname === '/' &&
         <div className='flex justify-center'>
           <button className='button-custom text-white p-2'>VOIR TOUTES LES STRUCTURES</button>
         </div>
-      }
+      } */}
 
     </section>
   );

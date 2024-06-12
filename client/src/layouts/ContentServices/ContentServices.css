@@ -1,0 +1,9 @@
+.border-bottom-custom{
+    border-bottom: 1px solid white;
+}
+
+.full-border-bg-custom{
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(43, 43, 43);
+}

@@ -1,4 +1,3 @@
-import FilterAllProperty from "../../FilterAllProperty/FilterAllProperty"
 import ItemCardFournisseur from "../ItemCardFournisseur/ItemCardFournisseur"
 import './ListCardFournisseur.css'
 

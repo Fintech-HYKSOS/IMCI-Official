@@ -1,147 +1,113 @@
-import React from 'react';
+import { useNavigate, useParams } from "react-router-dom";
+import { housesData } from "../data";
+import CarouselOnPropertyDetail from "../components/Carousels/CarouselOnPropertyDetail/CarouselOnPropertyDetail";
+import CarouselOtherWells from "../components/Carousels/CarouselOtherWells/CarouselOtherWells";
+import { useContext, useEffect, useState } from "react";
 
-//import data
-import { housesData } from '../data';
-
-//import use params
-import { useParams } from 'react-router-dom';
-
-//import icons
-import { BiBed, Bibath, BiArea, BiBath } from 'react-icons/bi'
-
-//import Link
-import { Link } from 'react-router-dom';
+import './styles/style_propertyDetails.css'
+import { HouseContext } from "../context/HouseContext";
 
 
 const PropertyDetails = () => {
-
   const { id } = useParams();
+  const navigate = useNavigate();
+  const { otherHousesInPropertyDetail, setOtherHousesInPropertyDetail } = useContext(HouseContext)
 
-  const house = housesData.find(house => {
-    return house.id === parseInt(id);
-  });
+  const house = housesData.find(house => { return house.id === parseInt(id) });
+
+  const otherHouses = housesData.filter(houseItem => { return houseItem.id !== house.id && houseItem.society === house.society })
+
+  useEffect(() => {
+    const toOtherHousesContext = () => {
+      otherHouses.length > 0 ? setOtherHousesInPropertyDetail(otherHouses) : setOtherHousesInPropertyDetail([])
+    }
+
+    toOtherHousesContext()
+    // console.log('otherHousesinContext', otherHousesInPropertyDetail)
+  }, [])
+
+  const [showOnContent, setShowOnContent] = useState("Description")
 
   return (
+    <div className="mx-16 my-6">
+      {/* Row Heading */}
+      <div className='md:flex items-center justify-between mb-5'>
+        <div className="max_BeforeMd:text-center max_BeforeMd:mb-4">
+          <h2 className='text-2xl font-semibold'>{house.name}</h2>
+          <h3 className='text-lg-mb-4'>{house.address}</h3>
+        </div>
 
-    //FORMULAIRE
-    <section>
-      <h1 className='text-center mt-10'>Biens Immobiliers de {house.society}</h1>
-      <div className='container mx-auto min-h-[800px] mb-14'>
-        <div className='flex flex-col lg:flex-row lg:items-center
-        lg:justify-between'>
+        <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm max_BeforeMd:justify-center'>
+          <div className={`${house.colourCountry} rounded-full text-black px-3`}>{house.country}</div>
 
-          <div>
-            <h2 className='text-2xl font-semibold'>{house.name}</h2>
-            <h3 className='text-lg-mb-4'>{house.address}</h3>
+          <div className='bg-[#404107] text-white px-3 rounded-full'>
+            {house.type}
           </div>
 
-          <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
-            <div className='bg-green-500 text-white
-            px-3 rounded-full'>
-              {house.type}
-            </div>
-
-            <div className='bg-violet-500 text-white
-            px-3 rounded-full'>
-              {house.town}
-            </div>
-          </div>
-
-          <div className='text-3xl font-semibold text-violet-600'>
-            {house.price} CFA
+          <div className='bg-[#002430] text-white px-3 rounded-full'>
+            {house.town}
           </div>
         </div>
 
-        <div className=' flex flex-col items-start
-         gap-8 lg:flex-row'>
-          <div className='max-w-[768px]'>
-            <div className='mb-8'>
-              <img src={house.imageLg} alt='' />
-            </div>
-            <div className='flex gap-x-6
-            text-violet-700 mb-6'>
-              <div className='flex gap-x-2 items-center'>
-                <BiBed className='text-2xl' />
-                <div>{house.bedrooms}</div>
-              </div>
-              <div className='flex gap-x-2 items-center'>
-                <BiBath className='text-2xl' />
-                <div>{house.bathrooms}</div>
-              </div>
-              <div className='flex gap-x-2 items-center'>
-                <BiArea className='text-2xl' />
-                <div>{house.surface}</div>
-              </div>
-            </div>
-            <div>{house.description}</div>
+        <div className='text-md text-center bg-black rounded-full p-2 font-semibold text-white'>
+          {house.price} FCFA
+        </div>
+      </div>
+
+      {/* Button "Souscrire à l'offre" NB: It's sticky */}
+      <div onClick={() => navigate(`/Souscription`)} className='flex justify-center cursor-pointer sticky top-[10%] relative z-10 focus:outline-none text-white 
+                bg-green-700 hover:bg-green-800 
+                focus:ring-4 focus:ring-green-300 
+                font-medium rounded-lg 
+                text-sm px-5 py-2.5  mb-2 
+                dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'>
+
+        <button className='p-4'>Souscrire à cette offre</button>
+      </div>
+
+      {/* Content; Description of image */}
+      <div className="lg:flex propertyDetail-custom gap-x-4">
+        <div className="">
+          <CarouselOnPropertyDetail propsHouse={house} />
+        </div>
+
+        <div className="propertyDetail-custom-explication bg-blue-100">
+          <div className="grid grid-cols-2 propertyDetail-custom-explication--buttons">
+            <div className={`py-3 cursor-pointer ${showOnContent === "Description" ? "bg-blue-200 border-2 border-blue-100" : "border-2 border-black hover:bg-green-500"}`} onClick={() => setShowOnContent("Description")}>Description</div>
+            <div className={`py-3 cursor-pointer ${showOnContent === "Details" ? "bg-blue-200 border-2 border-blue-100" : "border-2 border-black hover:bg-green-500"}`} onClick={() => setShowOnContent("Details")}>Details</div>
           </div>
 
-          <div className='flex-1 bg-white-100 w-full
-          mb-8 border border-gray-300 rounded-lg px-3 py-8 '>
-            <div className='flex items-center gap-x-4 mb-8'>
-              {/* <div className='w-20 h-20 p-1 border
-              border-gray-300 rounded-full'>
-                <img src={house.agent.image} alt='' />
-              </div> */}
-              <div>
-                <div className='w-50 flex justify-center items-center font-bold text-3xl'>Souscrire à l'offre</div>
-                {/* <Link to='' className='text-violet-700
-                text-sm'>
-                  Voir les Annonces
-                </Link> */}
+          <div className="propertyDetail-custom-explication--content p-3">
+            {showOnContent === "Description"
+              ?
+              <div className="propertyDetail-custom-explication--content--ForDescriptionState">
+                For Description
               </div>
-            </div>
-
-
-            {/* formulaire  */}
-            <form className='flex flex-col gap-y-4'>
-              <input
-                className='border
-                border-gray-300 focus:border-violet-700
-                outline-none rounnded w-full px-4 h-14 text-sm'
-                type='text'
-                placeholder='Name'
-              />
-              <input
-                className='border
-                border-gray-300 focus:border-violet-700
-                outline-none rounnded w-full px-4 h-14 text-sm'
-                type='text'
-                placeholder='Email'
-              />
-              <input
-                className='border
-                border-gray-300 focus:border-violet-700
-                outline-none rounnded w-full px-4 h-14 text-sm'
-                type='text'
-                placeholder='Téléphone'
-              />
-              <textarea className='border 
-              border-gray-300 focus:border-violet-700
-              outline-none resize-none rounded w-full p-4 h-36
-              text-sm text-gray-300'
-                placeholder='Message*'
-                defaultValue='Hello, je suis intéressé 
-              par un [appartement moderne]'>
-
-              </textarea>
-              <div className='flex gap-x-2'>
-                <button className='bg-violet-700
-                hover:bg-violet-800 text-white
-                rounded p-3 text-sm w-full 
-                transition'>Envoyer message</button>
-                <button className='border border-violet-700
-                text-violet-700 hover:border-violet-500
-                hover:text-violet-500 rounded p-3
-                text-sm w-full transition'>
-                  Appeller</button>
-              </div>
-            </form>
+              :
+              showOnContent === "Details"
+                ?
+                <div className="propertyDetail-custom-explication--content--ForDetailState">
+                  For Details
+                </div>
+                :
+                <div className="propertyDetail-custom-explication--content--ForNothingState">
+                  Aucun détail à fournir
+                </div>
+            }
           </div>
         </div>
       </div>
-    </section>
-  );
-};
+
+      {/* Carousel Other Biens */}
+      <div>
+        <div className="w-full mt-5 bg-[#00aa9b]">
+          <h1 className="text-center py-3 text-xl font-semibold">D'AUTRES BIENS VENANT DE {house.society}</h1>
+        </div>
+
+        <CarouselOtherWells />
+      </div>
+    </div>
+  )
+}
 
 export default PropertyDetails;

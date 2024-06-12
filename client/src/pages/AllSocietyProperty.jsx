@@ -1,27 +1,27 @@
 import { BiBed, Bibath, BiArea, BiBath } from 'react-icons/bi'
-import BannerAllSociety from '../components/BannerAllSociety/BannerAllsociety'
-import Search from '../components/Search/Search'
-import FilterAllProperty from '../components/FilterAllProperty/FilterAllProperty'
+import HeroAllSociety from '../components/Heros/HeroAllSociety/HeroAllsociety'
+import FilterAllProperty from '../components/Filters/FilterAllProperty/FilterAllProperty'
 import './styles/styles_allProperty.css'
-import ConditionalHouseList from '../components/HouseList/ConditionalHouseList/ConditionalHouseList'
+import ListCardForAllSociety from '../components/CardHouseForAllSociety/List/ListCardForAllSociety'
+import SidebarChoices from '../components/SidebarChoices/SidebarChoices'
+import Modal from '../components/Modal/Modal'
 
 const AllSocietyProperty = () => {
     return (
         <div className="container mx-auto px-6">
 
             {/* Small Banner */}
-            <BannerAllSociety />
+            <HeroAllSociety />
 
             <div className='responsive-margin-top-custom'>
-                <div className='flex justify-center div-sticky-custom mb-5'>
-                    <button className='button-sidebar-custom p-4'>Cliquer pour filtrer les propriétés</button>
-                </div>
+                <Modal/>
+                
                 <div className='flex'>
                     <div>
                         <FilterAllProperty />
-                        {/* <FilterAllProperty /> */}
+                        <SidebarChoices />
                     </div>
-                    <ConditionalHouseList />
+                    <ListCardForAllSociety />
                 </div>
             </div>
         </div>

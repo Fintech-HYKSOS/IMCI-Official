@@ -1,9 +1,9 @@
-.text-services h1{
+.text-services h1 {
     font-weight: 700;
     font-size: x-large;
 }
 
-.display-icons{
+.display-icons {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 /*Icons*/
-.display-icons div{
+.display-icons div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,15 +21,24 @@
     width: 6rem;
 }
 
-.display-icons div img{
+.display-icons div img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: 0;
 }
 
-.display-icons-contain-img{
+.display-icons-contain-img {
     overflow: hidden;
 }
+
 /*Close Icons*/
 
+.bg-custom-servicesAll {
+    background: rgb(21, 30, 80);
+    background: radial-gradient(circle, rgba(21, 30, 80, 1) 12%, rgba(17, 24, 39, 1) 48%);
+}
+
+.pricing-custom{
+    border: 5px solid teal;
+}
