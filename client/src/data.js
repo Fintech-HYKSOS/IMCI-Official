@@ -96,6 +96,7 @@ export const housesData = [
     
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'AGENCE SUCCÈS',
     href : '/SocietyProperties/Agence_Succes',
 
@@ -125,6 +126,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -155,6 +157,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -185,6 +188,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -213,6 +217,7 @@ export const housesData = [
     
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'AGENCE SUCCÈS',
     href : '/SocietyProperties/Agence_Succes',
 
@@ -241,6 +246,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -269,6 +275,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -297,6 +304,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -325,6 +333,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -353,6 +362,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -381,6 +391,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -409,6 +420,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -437,6 +449,7 @@ export const housesData = [
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'SCI KERLAU',
     href : '/SocietyProperties/SCI_Kerlau',
 
@@ -467,6 +480,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -497,6 +511,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -527,6 +542,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -557,6 +573,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -587,6 +604,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
@@ -617,6 +635,7 @@ export const housesData = [
     logoSociety: CinabreLogo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'CINABRE IMMOBILIER',
     href : '/SocietyProperties/Cinabre',
 
@@ -647,6 +666,7 @@ export const housesData = [
     logoSociety: Folourgo_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
     href : '/SocietyProperties/Folourgo',
 
