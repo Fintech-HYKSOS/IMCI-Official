@@ -2,18 +2,29 @@ import { TypeAnimation } from "react-type-animation"
 import { HighPricing, LowPricing } from "../../components/Pricings/Pricing"
 import './ContentServices.css'
 import { details_souscription } from "../../constants/details-souscription"
-
+import House3lg from '../../assets/img/houses/house3lg.png'
 
 export const CardDescription = ({ title, content }) => {
     return (
-        <div className="p-3 group mt-9 mx-20 bg-white rounded-3xl hover:bg-transparent hover:border-white hover:border-2 hover:text-white transition">
-            <div className="flex justify-center">
-                <div className="bg-black text-center group-hover:bg-white group-hover:text-black transition w-fit p-1.5 rounded-full">{title}</div>
-            </div>
-            <div className="text-black group-hover:text-white transition p-7 text-center">
-                {content}
+        // <div className="p-3 group mt-9 mx-20 bg-white rounded-3xl hover:bg-transparent hover:border-white hover:border-2 hover:text-white transition">
+        //     <div className="flex justify-center">
+        //         <div className="bg-black text-center group-hover:bg-white group-hover:text-black transition w-fit p-1.5 rounded-full">{title}</div>
+        //     </div>
+        //     <div className="text-black group-hover:text-white transition p-7 text-center">
+        //         {content}
+        //     </div>
+        // </div>
+
+        <div class="max-w-sm group border-2 border-white rounded-3xl overflow-hidden shadow-lg hover:bg-white transition">
+            {/* <img class="w-full" src={House3lg} alt="Sunset in the mountains" /> */}
+            <div class="px-6 py-4">
+                <div class="font-bold text-md mb-2 bg-teal-500 rounded-full text-center">{title}</div>
+                <p class="text-gray-700 group-hover:text-black text-base text-white p-3">
+                    {content}
+                </p>
             </div>
         </div>
+
     )
 }
 
@@ -61,7 +72,7 @@ export const ContentServices = () => {
                             Choisissez votre formule de souscription pour bénéficier de nos services :
                         </p>
 
-                        <div className="md:mt-3 grid gap-y-6 sm:grid-cols-2 sm:gap-x-6 md:gap-x-12 xl:gap-x-24">
+                        <div className="md:mt-7 grid gap-y-6 sm:grid-cols-2 sm:gap-x-6 md:gap-x-12 xl:gap-x-24">
                             <LowPricing />
 
                             <HighPricing />
@@ -72,8 +83,11 @@ export const ContentServices = () => {
                 <div className="my-8">
                     <h1 className="w-full border-bottom-custom ml-16">Description</h1>
 
-
-                    <MapDetailSouscription />
+                    <div className="flex justify-center mt-3">
+                        <div className="grid max_BeforeMd:grid-cols-1 grid-cols-2 gap-9">
+                            <MapDetailSouscription />
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
