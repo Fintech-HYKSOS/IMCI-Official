@@ -13,7 +13,7 @@
 
 
 .scrollingText-custom-containText{
-    animation: scroll_horizontal 60s linear infinite;
+    animation: scroll_horizontal 30s linear infinite;
 }
 
 /* .scrollingText-custom-containText:hover{
@@ -22,10 +22,10 @@
 
 @keyframes scroll_horizontal{
     0%{
-        left: 110%;
+        left: 100%;
     }
 
     100%{
-        left: -200%;
+        left: -80%;
     }
 }
