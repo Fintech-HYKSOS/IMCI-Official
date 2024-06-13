@@ -5,4 +5,5 @@ export const types_offres = [
     {name : 'Studio'},
     {name : 'Bureau'},
     {name : 'Magasin'},
+    {name : 'Appartement Meublé'},
 ]
