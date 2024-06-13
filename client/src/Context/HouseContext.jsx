@@ -50,7 +50,7 @@ const HouseContextProvider = ({ children }) => {
             new Set(allCountries.toSorted())];
 
         setCountries(uniqueCountries);
-        console.log("countries in HouseContext", countries)
+        // console.log("countries in HouseContext", countries)
     }, [])
 
 
@@ -65,7 +65,7 @@ const HouseContextProvider = ({ children }) => {
             new Set(allTowns.toSorted())];
 
         setTowns(uniqueTowns);
-        console.log("towns in HouseContext", towns)
+        // console.log("towns in HouseContext", towns)
     }, []); //checked
 
 
@@ -80,7 +80,7 @@ const HouseContextProvider = ({ children }) => {
             new Set(allSocieties.toSorted())];
 
         setSocieties(uniqueSocieties);
-        console.log("towns in HouseContext", towns)
+        // console.log("towns in HouseContext", towns)
     }, []); //checked
 
 
@@ -115,13 +115,13 @@ const HouseContextProvider = ({ children }) => {
         //Tout est par defaut
         if (dataSelected.town == towns[0] && dataSelected.property == properties[0] && dataSelected.price == "Selection des tranches de prix") {
             filter = housesData
-            console.log("filter", filter)
+            // console.log("filter", filter)
         }
 
         // //Town uniquement par  defaut
         else if (dataSelected.town == towns[0] && dataSelected.property != properties[0] && dataSelected.price != "Selection des tranches de prix") {
             filter = housesData.filter((house) => house.type == dataSelected.property && parseInt(house.price) >= dataSelected.minPrice && parseInt(house.price) <= dataSelected.maxPrice)
-            console.log("filter", filter)
+            // console.log("filter", filter)
         }
 
         // //Property uniquement  par defaut
@@ -154,7 +154,7 @@ const HouseContextProvider = ({ children }) => {
             filter = housesData.filter((house) => house.town == dataSelected.town && house.type == dataSelected.property && parseInt(house.price) >= dataSelected.minPrice && parseInt(house.price) <= dataSelected.maxPrice)
         }
 
-        console.log('final filter', filter)
+        // console.log('final filter', filter)
         setHouses(filter)
         // return filter
 
