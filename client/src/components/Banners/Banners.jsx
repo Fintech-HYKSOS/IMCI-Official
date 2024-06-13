@@ -1,5 +1,6 @@
 import SlideImg from "../Carousels/FadeImg/SlideImg"
 import { FilterBySelectingOnHomeScreen } from "../Filters/FilterBySelecting/FilterBySelecting"
+import './styles/BannerOther_style.css'
 
 export const BannerOther = () => {
     // const Background = "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
