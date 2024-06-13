@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 //import context
-import { HouseContext } from '../../../Context/HouseContext';
+import { HouseContext } from '../../../context/HouseContext';
 
 //import components
 import House from '../HouseItem/House';
