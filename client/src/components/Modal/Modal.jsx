@@ -13,6 +13,8 @@ const listOptionsInModal = () => {
             )
         }))
 }
+
+
 export default function Modal() {
     let [isOpen, setIsOpen] = useState(false)
 
