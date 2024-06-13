@@ -11,15 +11,19 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 //import house context provider
 import HouseContextProvider from './context/HouseContext';
+import CountriesDataProvider from './context/CountriesDataContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HouseContextProvider>
-    <Router>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </Router>
+    <CountriesDataProvider>
+      <Router>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Router>
+    </CountriesDataProvider>
   </HouseContextProvider>
 
 
