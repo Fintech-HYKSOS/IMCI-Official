@@ -13,7 +13,6 @@ import './styles.css'
 const CountryDropdown =() => {
   const {country, dataSelected, setDataSelected, setCountry, countries} = useContext(HouseContext)
   const [isOpen, setIsOpen] = useState(false);
-  console.log('countries',countries)
 
   return (
     <Menu as='div' className='dropdown-custom dropdown relative'>
