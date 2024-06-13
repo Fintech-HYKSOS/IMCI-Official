@@ -18,6 +18,7 @@ import EnLocation from './pages/EnLocation';
 import EnVente from './pages/EnVente';
 import FormSouscriptionClient from './pages/FormSouscriptionClient';
 import DevPage from './layouts/DevPage/DevPage';
+import { FormGetFormula } from './pages/FormGetFormula';
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         {/* Close Delete */}
 
         <Route path='/Souscription' element={<FormSouscriptionClient />} />
+        <Route path='/PaymentFormulas/:TypeFormula' element={<FormGetFormula />} />
 
         <Route path='/EnLocation' element={<EnLocation />} />
         <Route path='/EnVente' element={<EnVente />} />
