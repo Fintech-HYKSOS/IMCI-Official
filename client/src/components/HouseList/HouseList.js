@@ -16,7 +16,6 @@ import './HouseList_style.css'
 
 const HouseList = () => {
   const location = useLocation();
-  console.log("location actual", location)
 
   const { houses, loading } = useContext(HouseContext);
   const housesSort = houses.sort((a, b) => {
@@ -42,7 +41,7 @@ const HouseList = () => {
   const findOnehouseOnlyCinabre = houses.find(house => house.society === "CINABRE IMMOBILIER")
 
   const SortForDisplay = [findOnehouseOnlyFOLOURGO].concat(findOnehouseOnlyKERLAU).concat(findOnehouseOnlyAG).concat(findOnehouseOnlyCinabre)
-  console.log(SortForDisplay)
+  // console.log(SortForDisplay)
   const housesOnlyFolourgo = housesSort.filter(house => house.society === "FOLOURGO CONSTRUCTION" || house.society === "SCI KERLAU" || house.society === "AGENCE SUCCÈS")
 
   // console.log("sorting house", housesSort)
@@ -59,7 +58,7 @@ const HouseList = () => {
   return (
     <section className='mb-7'>
       <div className='container mx-auto'>
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
               <Link to={`${house.href}`}
@@ -71,7 +70,7 @@ const HouseList = () => {
           })}
         </div>
 
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
               <Link to={`${house.href}`}
