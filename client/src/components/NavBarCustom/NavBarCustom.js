@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef } from 'react'
+import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/img/Logo-IMCI-Update-WithoutBG.png';
@@ -40,27 +40,7 @@ function classNames(...classes) {
 
 export default function NavBarCustom() {
     const navigate = useNavigate()
-    const refNavbar = useRef();
     const [hiddenOnOrOff, setHiddenOnOrOff] = useState('hidden')
-
-    useEffect(() => {
-        const handleClick = (event) => {
-
-            return {
-                "clientX": event.offsetX, "clientY": event.offsetY
-            };
-        };
-
-
-        window.addEventListener("click", handleClick);
-
-        // Nettoyage de l'écouteur d'événement lors du démontage du composant
-        return () => {
-            window.removeEventListener("click", handleClick);
-        };
-    }, []);
-
-    
 
     //Exists only for toggling display of absolute subMenu of "Main Oeuvre"
     const switchHidden = (e) => {
@@ -77,7 +57,7 @@ export default function NavBarCustom() {
         <Disclosure as="nav" className="bg-[#001C54] sticky header-custom">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-7xl px-2 screen_navbar:px-6 lg:px-8 header-custom-content" ref={refNavbar}>
+                    <div className="mx-auto max-w-7xl px-2 screen_navbar:px-6 lg:px-8 header-custom-content">
                         <div className="relative flex items-center justify-between header-custom-content">
 
                             <div className="absolute inset-y-0 left-0 flex items-center screen_navbar:hidden">
