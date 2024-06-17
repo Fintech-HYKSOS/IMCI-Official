@@ -25,9 +25,9 @@ export const BannerCustomMainOeuvre = () => {
 
 export const Banner = () => {
     return (
-        <section className=''>
+        <section className='max-h-[640px] mb-8'>
             <div className='flex justify-center flex-col lg:flex-row mt-6'>
-                <div className='w-full lg:w-fit flex-initial flex flex-col items-center text-center mr-8 lg:text-center justify-center max_BeforeLg:px-0 lg:px-0'>
+                <div className='w-full lg:w-fit flex-initial flex flex-col items-center text-center mr-8 lg:text-center justify-center px-4 lg:px-0'>
                     <h1 className='text-xl sm:text-[40px] font-semibold leading-none mb-6'>
                         <span className='text-[#00aa9b]'>Immobilier</span> Côte d'Ivoire
                     </h1>
@@ -38,10 +38,10 @@ export const Banner = () => {
                     <FilterBySelectingOnHomeScreen />
                 </div>
                 {/* image */}
-                <div className='flex justify-center h-full items-center mb-9 div-custom mt-2 max_BeforeLg:w-full banner-carousel'>
+                <div className='flex justify-center mx-3 items-center mb-3 div-custom mt-2 max_BeforeLg:w-full banner-carousel'>
                     {/* <img className='imgBlob' src={Blob} alt='' /> */}
                     {/* <img className='imgBlob' src={Image} alt='' /> */}
-                    <SlideImg className='h-full' />
+                    <SlideImg className='' />
                 </div>
             </div>
             {/* <ButtonForSearchKheopx /> */}
