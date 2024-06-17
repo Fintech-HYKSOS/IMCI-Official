@@ -16,38 +16,38 @@ const Services = () => {
 
                 <div className='md:flex justify-center gap-1'>
                     <div className='card-custom'>
-                        <div className='card-custom-containImg'>
+                        <div className='card-custom-containImg max_BeforeMd:flex justify-center'>
                             <div className='card-custom-containImg-img'>
                                 <img src={Invest_Logo} alt="Invest Logo" />
                             </div>
                         </div>
-                        <div className='text-sm'>
+                        <div className='text-md max_BeforeMd:text-center max_BeforeMd:px-9'>
                             <h1 className='text-2xl font-bold my-2'>PROMOTION</h1>
                             Grâce aux algorithmes de IMCI.CLOUD sur Google, gagnez de la visibilité sur internet et mettez en avant vos biens immobiliers
                         </div>
                     </div>
 
                     <div className='card-custom'>
-                        <div className='card-custom-containImg'>
+                        <div className='card-custom-containImg max_BeforeMd:flex justify-center'>
                             <div className='card-custom-containImg-img'>
                                 <img src={Management_Logo} alt="Invest Logo" />
                             </div>
                         </div>
-                        <div className='text-sm'>
+                        <div className='text-md max_BeforeMd:text-center max_BeforeMd:px-9'>
                             <h1 className='text-2xl font-bold my-2'>GESTION</h1>
                             Avec nos différentes souscription, accedez à une panoplie de logiciels orientés <span className='font-bold'>gestion immobilière</span>
                         </div>
                     </div>
 
                     <div className='card-custom'>
-                        <div className='card-custom-containImg'>
+                        <div className='card-custom-containImg max_BeforeMd:flex justify-center'>
                             <div className='card-custom-containImg-img'>
                                 <img src={Increase_Logo} alt="Invest Logo" />
                             </div>
                         </div>
-                        <div className='text-sm'>
+                        <div className='text-md max_BeforeMd:text-center max_BeforeMd:px-9'>
                             <h1 className='text-2xl font-bold my-2'>GAIN</h1>
-                            Multipliez vos revenus et gagnez encore plus de clients pour votre entrprise
+                            Multipliez vos revenus et gagnez encore plus de clients pour votre entreprise
                         </div>
                     </div>
                 </div>
