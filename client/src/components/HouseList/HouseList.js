@@ -58,7 +58,7 @@ const HouseList = () => {
   return (
     <section className='mb-7'>
       <div className='container mx-auto'>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-3 gap-4'>
+        <div className='grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
               <Link to={`${house.href}`}
@@ -70,7 +70,7 @@ const HouseList = () => {
           })}
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-3 gap-4'>
+        {/* <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
             return (
               <Link to={`${house.href}`}
@@ -80,7 +80,7 @@ const HouseList = () => {
 
             )
           })}
-        </div>
+        </div> */}
 
         {/* <div className='grid md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-3 gap-4'>
           {SortForDisplay.map((house, index) => {
