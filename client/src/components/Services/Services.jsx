@@ -14,7 +14,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='md:flex justify-center gap-1'>
+                <div className='md:flex justify-center gap-1 gap-y-2'>
                     <div className='card-custom'>
                         <div className='card-custom-containImg max_BeforeMd:flex justify-center'>
                             <div className='card-custom-containImg-img'>
