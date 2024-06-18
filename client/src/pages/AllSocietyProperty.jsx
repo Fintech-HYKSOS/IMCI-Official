@@ -16,8 +16,8 @@ const AllSocietyProperty = () => {
             <div className='responsive-margin-top-custom'>
                 <Modal/>
                 
-                <div className='flex'>
-                    <div>
+                <div className='flex justify-center'>
+                    <div className='m-2'>
                         <FilterAllProperty />
                         <SidebarChoices />
                     </div>
