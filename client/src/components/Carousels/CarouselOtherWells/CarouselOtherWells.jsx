@@ -120,7 +120,7 @@ const CarouselOtherWells = () => {
                 return (
                     <FlipTilt
                         className='cursor-pointer'
-                        onClick={() => navigate(`/PropertyDetail/${element.id}`)}
+                        onClick={() => {navigate(`/PropertyDetail/${element.id}`); window.scrollTo(0,0)}}
                         front={<FrontOnFlip element={element} />}
                         back={<BackOnFlip />} />
                 )
