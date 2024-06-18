@@ -8,7 +8,7 @@ const Maping = () => {
     const loc_map = [5.35666777777, -3.968221877334289]
     return (
         <>
-            <MapContainer className='w-full h-full' center={loc_map} zoom={15} scrollWheelZoom={false}>
+            <MapContainer className='w-full h-full relative z-10' center={loc_map} zoom={15} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
