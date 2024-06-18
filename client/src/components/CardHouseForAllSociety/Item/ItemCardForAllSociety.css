@@ -13,7 +13,7 @@
 .imgContain-custom--forAllSociety img{
     height: 90%;
     /* width: 90%; */
-    border-radius: 27% 0% 27% 0%;
+    /* border-radius: 27% 0% 27% 0%; */
     object-fit: cover;
 }
 

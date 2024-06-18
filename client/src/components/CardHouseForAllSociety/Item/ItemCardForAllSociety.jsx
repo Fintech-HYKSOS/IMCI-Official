@@ -12,10 +12,10 @@ const ItemCardForAllSociety = ({ house }) => {
     const { image, type, town, address, society, logoSociety, href, country, colourCountry, price, id } = house;
 
     return (
-        <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto hover:shadow-2xl transition'>
+        <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[] w-full max-w-[320px] mx-auto hover:shadow-2xl transition'>
             <div className='imgContain-custom--forAllSociety'>
                 <div className='imgContain-custom-realContain--forAllSociety'>
-                    <img className='mb-10' src={image} alt='' />
+                    <img className='' src={image} alt='' />
                 </div>
             </div>
 
