@@ -13,7 +13,7 @@ const House = ({ house }) => {
     }
 
     return (
-        <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition'>
+        <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition'>
             <div className='imgContain-custom'>
                 <div className='imgContain-custom-realContain'>
                     <img className='mb-10' src={image} alt='' />
@@ -27,7 +27,7 @@ const House = ({ house }) => {
                 <div className='bg-[#00aa9b] rounded-full text-[#000001] font-bold text-xs px-2 text-indication'>{society}</div>
             </div>
 
-            <div className='mb-5 flex flex-wrap gap-x-1 text-sm'>
+            <div className='mb-5 flex flex-wrap gap-1 text-sm'>
                 <div className={`${colourCountry} rounded-full text-black px-3`}>{country}</div>
                 <div className='bg-[#00008B] rounded-full text-white px-3'>{town}</div>
             </div>
@@ -36,7 +36,7 @@ const House = ({ house }) => {
             <div className='flex gap-x-4 my-4'>
                 <Link to={href} className='text-[#00008B]
                 text-lg'>
-                    Accéder à leur liste d'offre
+                    Cliquer pour accéder à leur liste d'offre
                 </Link>
             </div>
             {/* <div className='text-lg font-semibold text-violet-600 mb-4'>{price} </div> */}
