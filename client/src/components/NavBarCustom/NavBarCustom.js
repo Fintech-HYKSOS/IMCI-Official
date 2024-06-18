@@ -41,6 +41,7 @@ function classNames(...classes) {
 export default function NavBarCustom() {
     const navigate = useNavigate()
     const [hiddenOnOrOff, setHiddenOnOrOff] = useState('hidden')
+    const [hiddenOnOrOffMobileNavbar, setHiddenOnOrOffMobileNavbar] = useState('hidden')
 
     //Exists only for toggling display of absolute subMenu of "Main Oeuvre"
     const switchHidden = (e) => {
@@ -53,13 +54,24 @@ export default function NavBarCustom() {
         }
     }
 
+    //Exists only for toggling display of the navbar on mobile
+    const switchHiddenMobileNavbar = (e) => {
+        e.preventDefault();
+        console.log("swtch navbar avtivated")
+        if (hiddenOnOrOffMobileNavbar === 'hidden') {
+            setHiddenOnOrOffMobileNavbar('block')
+        } else {
+            setHiddenOnOrOffMobileNavbar('hidden')
+        }
+    }
+
     return (
         <Disclosure as="nav" className="bg-[#001C54] sticky header-custom">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 screen_navbar:px-6 lg:px-8 header-custom-content">
                         <div className="relative flex items-center justify-between header-custom-content">
-
+                            
                             <div className="absolute inset-y-0 left-0 flex items-center screen_navbar:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -209,16 +221,15 @@ export default function NavBarCustom() {
                         <div className="relative space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (
                                 item.subMenuExist !== true ?
-                                    <Link
-                                        to={item.href}
+                                    <button
+                                        onClick={(e) => { navigate(`${item.href}`); }}
                                         className={classNames(
                                             item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                             'block rounded-md px-3 py-2 text-base font-medium'
                                         )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                    >
+                                        aria-current={item.current ? 'page' : undefined}>
                                         {item.name}
-                                    </Link>
+                                    </button>
 
                                     :
 
@@ -230,10 +241,10 @@ export default function NavBarCustom() {
                                         <div className={`${hiddenOnOrOff} bg-white absolute px-3 py-3 rounded`}>
                                             {(item.subMenu).map((subItem, key) => (
                                                 <div className='subMenu-Navbar-custom my-2'>
-                                                    <Link className={classNames('text-black')}
-                                                        to={subItem.href}>
+                                                    <button className={classNames('text-black')}
+                                                        onClick={(e) => { navigate(`${subItem.href}`) }}>
                                                         {subItem.name}
-                                                    </Link>
+                                                    </button>
                                                 </div>
                                             ))}
                                         </div>
