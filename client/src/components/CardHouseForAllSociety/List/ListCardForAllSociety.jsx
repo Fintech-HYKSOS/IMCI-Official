@@ -55,8 +55,8 @@ const ListCardForAllSociety = () => {
     }
     return (
         <section className='mb-7'>
-            <div className='container mx-auto'>
-                <div className='md:grid md:grid-cols-3 flex flex-wrap gap-4 mb-3'>
+            <div className=''>
+                <div className='w-full grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-3'>
                     {
                         location.pathname == '/SocietyProperties/Folourgo' &&
                         housesOnlyFOLOURGO.map((house, index) => {
