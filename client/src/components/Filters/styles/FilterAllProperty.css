@@ -7,3 +7,10 @@
 .submenu-custom .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
+
+.allOptions, .Terrain, .Appartement, 
+.Villa, .Studio, 
+.Bureau, .Magasin, 
+.Appartement .Meublé{
+    background-color: rgba(0, 211, 141, 0.31);
+}

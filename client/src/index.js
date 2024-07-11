@@ -12,17 +12,22 @@ import { BrowserRouter as Router } from 'react-router-dom';
 //import house context provider
 import HouseContextProvider from './context/HouseContext';
 import CountriesDataProvider from './context/CountriesDataContext';
-
+import AxiosKheopxContextProvider from './context/AxiosKheopxContext';
+import FilterContextProvider from './context/FilterContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HouseContextProvider>
     <CountriesDataProvider>
-      <Router>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-      </Router>
+      <AxiosKheopxContextProvider>
+        <FilterContextProvider>
+          <Router>
+            <React.StrictMode>
+              <App />
+            </React.StrictMode>
+          </Router>
+        </FilterContextProvider>
+      </AxiosKheopxContextProvider>
     </CountriesDataProvider>
   </HouseContextProvider>
 

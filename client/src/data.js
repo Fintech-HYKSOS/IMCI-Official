@@ -2,8 +2,6 @@
 import Folourgo_Logo from './assets/folourgo/Folourgo_Logo.jpg'
 import Folourgo_Main from './assets/folourgo/Image site 6-01.jpg'
 import KERLAU_Logo from './assets/Kerlau/Kerlau_Logo.jpeg'
-import CinabreLogo from './assets/Cinabre/CinabreLogo.jpg'
-import Cinabre_1 from './assets/Cinabre/Cinabre_1.jpeg'
 import Folourgo_4 from './assets/folourgo/Folourgo_4.jpeg'
 import AgenceSucces_Logo from './assets/AgenceSucces/AgenceSucces_Logo.png'
 
@@ -14,6 +12,11 @@ import Kerlau_4 from './assets/Kerlau/Kerlau_4.jpeg'
 import Kerlau_5 from './assets/Kerlau/Kerlau_5.jpeg'
 import Kerlau_6 from './assets/Kerlau/Kerlau_6.jpeg'
 import Kerlau_7 from './assets/Kerlau/Kerlau_7.jpeg'
+
+//Cinabre
+import CinabreLogo from './assets/Cinabre/CinabreLogo.jpg'
+import Cinabre_1 from './assets/Cinabre/Cinabre_1.jpeg'
+import Cinabre_2 from './assets/Cinabre/Houses/CINABRE (1).jpeg'
 
 // import house images small for HouseList
 import Icon from "./assets/img/icons/Icon.jpeg"
@@ -93,12 +96,12 @@ export const housesData = [
     year: '2016',
     logoSociety: AgenceSucces_Logo,
     price: '110000',
-    
+
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'AGENCE SUCCÈS',
-    href : '/SocietyProperties/Agence_Succes',
+    href: '/SocietyProperties/Agence_Succes',
 
     agent: {
       image: Agent1,
@@ -128,7 +131,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '140000',
     agent: {
@@ -159,7 +162,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '170000',
     agent: {
@@ -190,7 +193,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
@@ -214,12 +217,12 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2015',
     logoSociety: AgenceSucces_Logo,
-    
+
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'AGENCE SUCCÈS',
-    href : '/SocietyProperties/Agence_Succes',
+    href: '/SocietyProperties/Agence_Succes',
 
     price: '210000',
     agent: {
@@ -242,13 +245,13 @@ export const housesData = [
     bathrooms: '3',
     surface: '6200 sq ft',
     year: '2014',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '220000',
     agent: {
@@ -271,13 +274,13 @@ export const housesData = [
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2012',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '20000',
     agent: {
@@ -300,13 +303,13 @@ export const housesData = [
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2011',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '30000',
     agent: {
@@ -329,13 +332,13 @@ export const housesData = [
     bathrooms: '1',
     surface: '1100 sq ft',
     year: '2011',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '40000',
     agent: {
@@ -358,13 +361,13 @@ export const housesData = [
     bathrooms: '3',
     surface: '3200 sq ft',
     year: '2015',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '117000',
     agent: {
@@ -387,13 +390,13 @@ export const housesData = [
     bathrooms: '2',
     surface: '2200 sq ft',
     year: '2019',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '145000',
     agent: {
@@ -416,13 +419,13 @@ export const housesData = [
     bathrooms: '4',
     surface: '4600 sq ft',
     year: '2015',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '139000',
     agent: {
@@ -445,13 +448,13 @@ export const housesData = [
     bathrooms: '2',
     surface: '5200 sq ft',
     year: '2014',
-    
+
     logoSociety: KERLAU_Logo,
     country: "Côte d'Ivoire",
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'SCI KERLAU',
-    href : '/SocietyProperties/SCI_Kerlau',
+    href: '/SocietyProperties/SCI_Kerlau',
 
     price: '180000',
     agent: {
@@ -482,7 +485,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
@@ -513,7 +516,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '221000',
     agent: {
@@ -544,7 +547,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '21000',
     agent: {
@@ -575,7 +578,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
@@ -606,7 +609,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
@@ -637,7 +640,7 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'CINABRE IMMOBILIER',
-    href : '/SocietyProperties/Cinabre',
+    href: '/SocietyProperties/Cinabre',
 
     price: '140000',
     agent: {
@@ -668,12 +671,53 @@ export const housesData = [
     colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
     type_society: 'Entreprise',
     society: 'FOLOURGO CONSTRUCTION',
-    href : '/SocietyProperties/Folourgo',
+    href: '/SocietyProperties/Folourgo',
 
     price: '38000',
     agent: {
       image: Agent6,
       name: 'Karen Sorensen',
+      phone: '0123 456 78910',
+    },
+  },
+  {
+    id: 21,
+    type: 'Appartement',
+    name: 'A la Résidence AYA',
+    description:
+      `La Résidence AYA est logée au 3ème étage d’un immeuble haut standing, situé au cœur de la prestigieuse commune de Cocody II Plateaux, 7ème tranche.`,
+
+    details:
+      `✅ UNE CUISINE MODERNE, UN BALCON
+
+        ✅ DEUX BELLES CHAMBRES AUTONOMES CLIMATISEES , DEUX SALLES DE BAINS , DES TOILETTES VISITEURS
+
+        ✅UNE MACHINE À LAVER , UN GRAND SALON CLIMATISE, UNE TABLE À MANGER ET UNE FONTAINE. 
+
+        ✅ UN ACCÈS AU WIFI HAUTE VITESSE DANS TOUTES LES PIÈCES , AVEC PLUSIEURS CHAÎNES DE TV SATELLITE , NETFLIX , ABONNEMENT CANAL ET À UN SERVICE DE NETTOYAGE RÉGULIER. 
+
+        ✅ UN ASCENSEUR , UN PARKING INTERNE .`,
+
+    image: Cinabre_2,
+    imageLg: House2Lg,
+    town: 'Abidjan',
+    address: 'Cocody II Plateaux, 7ème tranche',
+    bedrooms: '2',
+    bathrooms: '2',
+    surface: '',
+    year: '2024',
+
+    logoSociety: CinabreLogo,
+    country: "Côte d'Ivoire",
+    colourCountry: 'bg-gradient-to-r from-orange-300 via-gray-200 to-green-600',
+    type_society: 'Entreprise',
+    society: 'CINABRE IMMOBILIER',
+    href: '/SocietyProperties/Cinabre',
+
+    price: '60000 ~ 70000',
+    agent: {
+      image: Agent2,
+      name: 'Daryl Hawker',
       phone: '0123 456 78910',
     },
   },

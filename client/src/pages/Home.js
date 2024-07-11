@@ -14,9 +14,9 @@ const Home = () => {
         <ScrollingText />
 
         <div className='flex justify-center'>
-          <BandPubAfterLG />
+          {/* <BandPubAfterLG /> */}
           <Main />
-          <BandPubAfterLG />
+          {/* <BandPubAfterLG /> */}
         </div>
 
         {/* <Banner />
@@ -29,7 +29,7 @@ const Home = () => {
         {/* <HouseList /> */}
         {/* <ContentOnHome /> */}
 
-        <BandPubBeforeLG />
+        {/* <BandPubBeforeLG /> */}
 
         <Services />
       </div>
